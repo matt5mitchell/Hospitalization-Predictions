@@ -13,7 +13,7 @@ Although the patient populations can be relatively small, many patients are enga
 
 To address the problem of multiple observations per patient \(i.e., repeated measures\), I needed to include patient-level indicator variables in a way that is conceptually similar to mixed-effects regression models. Based on the recommendations of Maity & Pal 2013, I included included a subject-specific input to the final hidden layer of the model. 
 
-Motivated by the desire to take advantage of as much data as possible (and avoid unnecessary aggregation/feature design), I included more than simple feed-forward layers in the architecture. I used two recurrent hidden layers \(GRUs\) to patterns from time series health care utilization data. Additionally, I included a pre-trained population segmentation model \(see [Populatin Segmentation](https://github.com/matt5mitchell/Population-Segmentation)\) to provide nuance to the model.
+Motivated by the desire to take advantage of as much data as possible (and avoid unnecessary aggregation/feature design), I included more than simple feed-forward layers in the architecture. I used two recurrent hidden layers \(GRUs\) to patterns from time series health care utilization data. Additionally, I included a pre-trained population segmentation model \(see [Population Segmentation](https://github.com/matt5mitchell/Population-Segmentation)\) to provide nuance to the model.
 
 This model is still a pilot, but the early results of this architecture are promising.
 
